@@ -1,21 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --max-width: 1100px;
-  --border-radius: 12px;
+  --border-radius: 20px;
+  --border-size: 3px;
+
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+
+  --foreground: #000;
+  --background: #fff;
+  --background-secondary: #ecf0f3;
+
+  --icon-size: 2rem;
+  --font-h1-size: 2.5rem;
+  --font-h2-size: 2rem;
+  --font-h3-size: 1.5rem;
+  --font-h4-size: 1.25rem;
+  --font-h5-size: 1rem;
+  --font-h6-size: 0.875rem;
+  --font-normal-size: 1rem;
+  --font-small-size: 0.875rem;
+  --font-xsmall-size: 0.75rem;
+  --font-xxsmall-size: 0.625rem;
+  --font-smaller-size: 0.5rem;
+
+  -webkit-user-select: none; /* Chrome  y Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  overscroll-behavior: none;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
+    --foreground: #fff;
+    --background: #000;
+    --background-secondary: #404041;
   }
 }
 
@@ -23,6 +46,21 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+h1 {
+  font-size: var(--font-h1-size);
+}
+h2 {
+  font-size: var(--font-h2-size);
+}
+h3 {
+  font-size: var(--font-h3-size);
+}
+h4 {
+  font-size: var(--font-h4-size);
+}
+h5 {
+  font-size: var(--font-h5-size);
 }
 
 html,
@@ -32,7 +70,8 @@ body {
 }
 
 body {
-  background-color: var(--background-rgb);
+  color: var(--foreground);
+  background-color: var(--background);
 }
 
 a {

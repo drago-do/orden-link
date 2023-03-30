@@ -1,0 +1,32 @@
+{
+  "theme_color": "var(--background-secondary)",
+  "background_color": "var(--background)",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Orden Link para preparadores y cajeros",
+  "short_name": "Orden Link",
+  "description": "App para coordinar las comandas que realiza el mesero y mantenerlas comunicadas con los temas puestos de trabajo.",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
